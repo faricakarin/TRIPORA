@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRIPORA - Desa Wisata</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1581091870633-66cdb1c57c4e?auto=format&fit=crop&w=1600&q=80');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="text-gray-800 font-sans bg-white bg-opacity-90">
+
+<!-- Navbar -->
+<header class="fixed w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">TRIPORA</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-blue-600">Beranda</a>
+      <a href="#desa" class="hover:text-blue-600">Desa Wisata</a>
+      <a href="#detail" class="hover:text-blue-600">Detail</a>
+      <a href="#booking" class="hover:text-blue-600">Booking</a>
+      <a href="#login" class="hover:text-blue-600">Login</a>
+      <a href="#admin" class="hover:text-blue-600">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pt-24">
+
+<!-- Hero -->
+<section id="home" class="text-center py-24 bg-blue-50 bg-opacity-70">
+  <h2 class="text-4xl font-extrabold text-blue-700 mb-4">Jelajahi Keindahan Desa Wisata Indonesia</h2>
+  <p class="text-lg text-gray-600 mb-6">Booking mudah, cepat, dan terpercaya bersama TRIPORA</p>
+  <a href="#desa" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Mulai Eksplorasi</a>
+</section>
+
+<!-- Daftar Desa Wisata -->
+<section id="desa" class="py-16 px-6 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-10">Desa Wisata Unggulan</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <!-- Desa 1 -->
+    <div class="rounded shadow hover:shadow-lg overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1610632380989-680fe40821d6?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Nglinggo</h3>
+        <p class="text-sm text-gray-500">Kulon Progo, Yogyakarta</p>
+        <p class="text-sm text-gray-700 mt-2">Kebun teh, sunrise Bukit Ngisis, dan homestay lokal.</p>
+      </div>
+    </div>
+    <!-- Desa 2 -->
+    <div class="rounded shadow hover:shadow-lg overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1589770241100-5455c164db75?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Pentingsari</h3>
+        <p class="text-sm text-gray-500">Sleman, Yogyakarta</p>
+        <p class="text-sm text-gray-700 mt-2">Outbond alam, budaya desa, dan pertanian edukatif.</p>
+      </div>
+    </div>
+    <!-- Desa 3 -->
+    <div class="rounded shadow hover:shadow-lg overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1587095951421-67426702fc02?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Nglanggeran</h3>
+        <p class="text-sm text-gray-500">Gunungkidul, Yogyakarta</p>
+        <p class="text-sm text-gray-700 mt-2">Gunung api purba, embung, dan kuliner lokal desa.</p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <a href="#detail" class="text-blue-600 font-semibold hover:underline">Jelajahi Desa Wisata Lainnya →</a>
+  </div>
+</section>
+
+<!-- Detail Desa Wisata -->
+<section id="detail" class="py-16 px-6 text-center bg-white bg-opacity-90">
+  <h2 class="text-3xl font-bold mb-6">Detail Desa Wisata</h2>
+  <p class="max-w-2xl mx-auto text-gray-700">Desa Wisata Nglinggo adalah destinasi dengan panorama kebun teh di perbukitan Menoreh, dilengkapi aktivitas sunrise, wisata budaya dan penginapan ramah lingkungan. Cocok untuk healing, edukasi, dan eksplorasi budaya lokal.</p>
+</section>
+
+<!-- Booking Form -->
+<section id="booking" class="py-16 bg-blue-100 px-6">
+  <h2 class="text-2xl font-bold text-center mb-6">Form Booking</h2>
+  <form class="max-w-xl mx-auto space-y-4">
+    <input type="text" placeholder="Nama Lengkap" class="w-full border p-3 rounded" />
+    <input type="email" placeholder="Email" class="w-full border p-3 rounded" />
+    <input type="date" class="w-full border p-3 rounded" />
+    <select class="w-full border p-3 rounded">
+      <option>Pilih Desa Wisata</option>
+      <option>Nglinggo</option>
+      <option>Pentingsari</option>
+      <option>Nglanggeran</option>
+    </select>
+    <button class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Pesan Sekarang</button>
+  </form>
+</section>
+
+<!-- Login/Register -->
+<section id="login" class="py-16 bg-gray-50 px-6">
+  <h2 class="text-2xl font-bold text-center mb-6">Login / Register</h2>
+  <form class="max-w-md mx-auto space-y-4">
+    <input type="email" placeholder="Email" class="w-full border p-3 rounded" />
+    <input type="password" placeholder="Password" class="w-full border p-3 rounded" />
+    <button class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Masuk</button>
+  </form>
+</section>
+
+<!-- Dashboard Admin -->
+<section id="admin" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="text-2xl font-bold text-center mb-6">Dashboard Mitra Desa</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 shadow rounded">
+      <h3 class="text-lg font-semibold mb-2">Total Tiket Terjual</h3>
+      <p class="text-3xl font-bold text-blue-600">1.240</p>
+    </div>
+    <div class="bg-white p-6 shadow rounded">
+      <h3 class="text-lg font-semibold mb-2">Pendapatan Bulan Ini</h3>
+      <p class="text-3xl font-bold text-green-500">Rp 24.500.000</p>
+    </div>
+    <div class="bg-white p-6 shadow rounded">
+      <h3 class="text-lg font-semibold mb-2">Jumlah Desa Aktif</h3>
+      <p class="text-3xl font-bold text-purple-600">18</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-white shadow-inner py-6 mt-12 text-center text-sm text-gray-500">
+  &copy; 2025 TRIPORA. Jelajahi Desa Wisata Indonesia.
+</footer>
+
+</body>
+</html>
